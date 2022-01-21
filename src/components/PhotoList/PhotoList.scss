@@ -1,0 +1,67 @@
+.photolist__container {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 5rem 0rem;
+  .photolist-item {
+    width: 25rem;
+    height: 25rem;
+    position: relative;
+    overflow: hidden;
+    border-radius: 1rem;
+    img {
+      width: 100%;
+      transition: all 0.45s ease 0s;
+    }
+    &__title {
+      font-size: 1.5rem;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      display: -webkit-box;
+      -webkit-box-orient: vertical;
+      -webkit-line-clamp: 2;
+
+      color: white;
+      text-align: center;
+      margin: 5rem 0;
+    }
+    &__overlay {
+      opacity: 0;
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      background-color: rgba($color: #000000, $alpha: 0.8);
+      height: 100%;
+      transition: all 0.45s ease;
+      &:hover {
+        opacity: 1;
+      }
+      .photolist-item__actions {
+        display: flex;
+        justify-content: center;
+        gap: 2rem;
+        .btn-edit {
+          font-size: 1.5rem;
+          border-radius: 0.7rem;
+          padding: 0.5rem 1.7rem;
+          &:hover {
+            cursor: pointer;
+          }
+        }
+        .btn-remove {
+          font-size: 1.5rem;
+          border-radius: 0.7rem;
+          padding: 0.5rem 1.7rem;
+          &:hover {
+            cursor: pointer;
+          }
+        }
+      }
+    }
+    &:hover > img {
+      transform: scale(1.5);
+    }
+  }
+}

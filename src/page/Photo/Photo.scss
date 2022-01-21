@@ -1,0 +1,14 @@
+@import '../../assets/styles/variable';
+
+.link {
+  margin: 2rem 0;
+  text-align: center;
+  .link__add-new-photo {
+    font-size: 2rem;
+    text-decoration: none;
+    color: $primary-color;
+    &:hover{
+        opacity: 0.8;
+    }
+  }
+}

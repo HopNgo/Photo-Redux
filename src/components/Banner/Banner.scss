@@ -1,0 +1,14 @@
+.banner {
+  height: 20rem;
+  background-position: center;
+  background-size: cover;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &__title {
+    font-size: 3rem;
+    color: #fff;
+    font-weight: bold;
+  }
+}
